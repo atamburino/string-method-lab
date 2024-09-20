@@ -54,12 +54,12 @@ function getIndexOf (testInputString, searchString) {
     return testInputString.indexOf(searchString);
 }
 
-function sliceString (testInputString, sliceOnIndex) {
+function sliceString (testInputString, sliceOnIndex1, sliceOnIndex2) {
     const validationResult = isValidString(testInputString);
     if (validationResult !== true) {
         return validationResult;
     }
-    return x // somthing
+    return testInputString.slice(sliceOnIndex1, sliceOnIndex2);
 }
 
 // function splitString () {
