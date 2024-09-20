@@ -28,8 +28,17 @@ function concatenateStrings (string1, string2) {
     return string1.concat(string2)
 }
 
-function doesInclude () {
-    return "hello";
+function doesInclude (string1, string2) {
+    // Check if string is not a string
+    if (string1.length === 0) {
+        return 'String is empty';
+    }
+    
+    if (typeof string2 !== 'string') {
+        return `Value given to function was of Data Type: ${typeof string2}`;
+    }
+
+    return string1.includes(string2);
 }
 
 function getIndexOf () {
