@@ -16,8 +16,16 @@ function getCharAt (string, index) {
     }
 }
 
-function concatenateStrings () {
-    return "hello";
+function concatenateStrings (string1, string2) {
+    // Check if string1 is not a string
+    if (typeof string1 !== 'string') {
+        return `Value given to function was of Data Type: ${typeof string1}`;
+    }
+    // Check if string2 is not a string
+    if (typeof string2 !== 'string') {
+        return `Value given to function was of Data Type: ${typeof string2}`;
+    }
+    return string1.concat(string2)
 }
 
 function doesInclude () {
