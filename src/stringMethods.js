@@ -1,4 +1,4 @@
-// 
+// Is Valid helper Fuction
 function isValidString(inputString) {
     if (typeof inputString !== 'string') {
         return `Value given to function was of Data Type: ${typeof inputString}`;
