@@ -1,9 +1,14 @@
+// Is Valid helper Fuction
+function isValidString(inputString) {
+    if (typeof inputString !== 'string') {
+        return `Value given to function was of Data Type: ${typeof inputString}`;
+    }
+    if (inputString.length === 0) {
+        return 'String is empty';
+    }
+    return true;
+}
 
-
-// charAt
-// Return the index
-// return string info on number
-// return string is empy on empty string
 function getCharAt (string, index) {
     if (string.length === 0) {
         return 'String is empty';
@@ -41,8 +46,12 @@ function doesInclude (string1, string2) {
     return string1.includes(string2);
 }
 
-function getIndexOf () {
-    return "hello";
+function getIndexOf (testInputString, searchString) {
+    const validationResult = isValidString(testInputString);
+    if (validationResult !== true) {
+        return validationResult;
+    }
+    return testInputString.indexOf(searchString);
 }
 
 function sliceString () {
