@@ -54,9 +54,9 @@ function getIndexOf (testInputString, searchString) {
     return testInputString.indexOf(searchString);
 }
 
-// function sliceString () {
+function sliceString () {
 
-// }
+}
 
 // function splitString () {
 
@@ -83,7 +83,7 @@ module.exports = {
     concatenateStrings,
     doesInclude,
     getIndexOf,
-    // sliceString,
+    sliceString,
     // splitString,
     // convertToLowerCase,
     // convertToUpperCase,
