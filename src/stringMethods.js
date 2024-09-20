@@ -54,41 +54,41 @@ function getIndexOf (testInputString, searchString) {
     return testInputString.indexOf(searchString);
 }
 
-function sliceString () {
-    return "hello";
-}
+// function sliceString () {
 
-function splitString () {
-    return "hello";
-}
+// }
 
-function convertToLowerCase () {
-    return "hello";
-}
+// function splitString () {
 
-function convertToUpperCase () {
-    return "hello";
-}
+// }
 
-function trimString () {
-    return "hello";
-}
+// function convertToLowerCase () {
 
-function replaceSubstring () {
-    return "hello";
-}
+// }
+
+// function convertToUpperCase () {
+
+// }
+
+// function trimString () {
+
+// }
+
+// function replaceSubstring () {
+
+// }
 
 module.exports = {
     getCharAt,
     concatenateStrings,
     doesInclude,
     getIndexOf,
-    sliceString,
-    splitString,
-    convertToLowerCase,
-    convertToUpperCase,
-    trimString,
-    replaceSubstring
+    // sliceString,
+    // splitString,
+    // convertToLowerCase,
+    // convertToUpperCase,
+    // trimString,
+    // replaceSubstring
 };
 
 
