@@ -70,8 +70,12 @@ function splitString (testInputString , splitPoint) {
     return testInputString.split(splitPoint);
 }
 
-function convertToLowerCase () {
-
+function convertToLowerCase (testInputString) {
+    const validationResult = isValidString(testInputString);
+    if (validationResult !== true) {
+        return validationResult;
+    }
+    return testInputString.toLowerCase();
 }
 
 // function convertToUpperCase () {
