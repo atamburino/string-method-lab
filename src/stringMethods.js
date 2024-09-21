@@ -70,9 +70,9 @@ function splitString (testInputString , splitPoint) {
     return testInputString.split(splitPoint);
 }
 
-// function convertToLowerCase () {
+function convertToLowerCase () {
 
-// }
+}
 
 // function convertToUpperCase () {
 
@@ -93,7 +93,7 @@ module.exports = {
     getIndexOf,
     sliceString,
     splitString,
-    // convertToLowerCase,
+    convertToLowerCase,
     // convertToUpperCase,
     // trimString,
     // replaceSubstring
