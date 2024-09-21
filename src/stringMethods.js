@@ -62,9 +62,13 @@ function sliceString (testInputString, sliceOnIndex1, sliceOnIndex2) {
     return testInputString.slice(sliceOnIndex1, sliceOnIndex2);
 }
 
-// function splitString () {
-
-// }
+function splitString (testInputString , splitPoint) {
+    const validationResult = isValidString(testInputString);
+    if (validationResult !== true) {
+        return validationResult;
+    }
+    return testInputString.split(splitPoint);
+}
 
 // function convertToLowerCase () {
 
@@ -88,7 +92,7 @@ module.exports = {
     doesInclude,
     getIndexOf,
     sliceString,
-    // splitString,
+    splitString,
     // convertToLowerCase,
     // convertToUpperCase,
     // trimString,
