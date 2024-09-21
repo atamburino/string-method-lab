@@ -94,9 +94,9 @@ function trimString (testInputString) {
     return testInputString.trim();
 }
 
-// function replaceSubstring () {
+function replaceSubstring () {
 
-// }
+}
 
 module.exports = {
     getCharAt,
@@ -108,7 +108,7 @@ module.exports = {
     convertToLowerCase,
     convertToUpperCase,
     trimString,
-    // replaceSubstring
+    replaceSubstring
 };
 
 
