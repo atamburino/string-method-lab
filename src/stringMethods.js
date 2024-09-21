@@ -78,9 +78,13 @@ function convertToLowerCase (testInputString) {
     return testInputString.toLowerCase();
 }
 
-// function convertToUpperCase () {
-
-// }
+function convertToUpperCase (testInputString) {
+    const validationResult = isValidString(testInputString);
+    if (validationResult !== true) {
+        return validationResult;
+    }
+    return testInputString.toUpperCase();
+}
 
 // function trimString () {
 
@@ -98,7 +102,7 @@ module.exports = {
     sliceString,
     splitString,
     convertToLowerCase,
-    // convertToUpperCase,
+    convertToUpperCase,
     // trimString,
     // replaceSubstring
 };
