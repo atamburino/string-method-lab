@@ -94,9 +94,23 @@ function trimString (testInputString) {
     return testInputString.trim();
 }
 
-// function replaceSubstring () {
-
-// }
+function replaceSubstring(testInputString, targetWord, replaceString) {
+    const validationResult1 = isValidString(testInputString);
+    const validationResult2 = isValidString(targetWord);
+    const validationResult3 = isValidString(replaceString);
+    
+    if (validationResult1 !== true) {
+      return validationResult1;
+    }
+    if (validationResult2 !== true) {
+      return validationResult2;
+    }
+    if (validationResult3 !== true) {
+      return validationResult3;
+    }
+    
+    return testInputString.replace(targetWord, replaceString);
+  }
 
 module.exports = {
     getCharAt,
@@ -108,7 +122,7 @@ module.exports = {
     convertToLowerCase,
     convertToUpperCase,
     trimString,
-    // replaceSubstring
+    replaceSubstring
 };
 
 
